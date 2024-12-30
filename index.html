@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Full Stack Web Developer, Compatible in many coding languages like C++, Java, JS, React JS, Python, Node JS, Angular JS, CSS">
+    <title>My Portfolio</title>
+    <link rel="icon" href="img/iconmonstr-briefcase-5-240.png">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <p><a href="javascript:void(0);" onclick="location.replace(window.location.href);" style="color:white" style="color:white">Umang's Portfolio</a></p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Umang!</h2>
+            <p>A passionate Full Stack Web Developer</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="text">
+                <p>I am a passionate coder with a deep interest in solving complex problems. With expertise in languages
+                    like C++, Java, Python, and JavaScript, I enjoy creating efficient and dynamic solutions.</p>
+            </div>
+            <div class="image">
+                <img src="img/Me(1).jpg" alt="Umang's Image">
+            </div>
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="skills" class="section">
+        <div class="skills-container">
+            <h2 class="section-title">Technical skills</h2>
+            <div class="skills-description">
+                <h3>What I Bring to the Table</h3>
+                <p>As a developer, I can be described as having solid knowledge in computer science. Specializing in
+                    developing efficient, scalable, and secure solutions, my areas of expertise range from programming
+                    to full-stack development, database management, and more. With hands-on experience using languages
+                    such as C, C++, Java, and Python, I can look at problems with flexibility and accuracy.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="img/iconmonstr-android-os-1-240.png" class="skill-icon" alt="Operating Systems">
+                    <h4>Operating Systems</h4>
+                    <p>Proficient in core OS concepts like process scheduling, memory management, and file systems,
+                        enabling me to design optimized and reliable system-level applications.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/iconmonstr-database-1-240.png" class="skill-icon" alt="Database Management">
+                    <h4>Database Management</h4>
+                    <p>Experienced in designing and managing relational databases using SQL, with a focus on query
+                        optimization and secure data handling.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/structure.png" class="skill-icon" alt="Data Structures & Algorithms">
+                    <h4>Data Structures & Algorithms</h4>
+                    <p>Strong command over data structures and algorithms, including trees, graphs, and dynamic
+                        programming, ensuring efficient problem-solving.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/full-stack.png" class="skill-icon" alt="Full-Stack Development">
+                    <h4>Full-Stack Development</h4>
+                    <p>Skilled in building end-to-end web applications, leveraging modern frameworks and tools for both
+                        front-end and back-end development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="projects-heading">My Projects</h2>
+        <p class="projects-para">Here are a few projects I've worked on...</p>
+        <!-- Project Cards -->
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Employee Payroll System</h3>
+                <p>This project is an employee payroll management system developed in Java. It handles employee record
+                    maintenance, salary calculation based on attendance and pay scales, automated payslip generation,
+                    and payroll reporting. I also integrated a database to ensure efficient data handling and query
+                    optimization, improving system scalability and reliability.</p>
+                <a href="https://github.com/UmangChoolet/Employee-Payroll-System" target="_blank">View project on
+                    GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Dune: A Maze Game</h3>
+                <p>For this project, I developed a maze game using BFS (Breadth-First Search) for the pathfinding logic.
+                    The game involves navigating through a maze with obstacles, with a focus on real-time player
+                    movement and efficient maze-solving algorithms. The project helped me understand concepts like graph
+                    traversal and real-time application development.</p>
+                <a href="https://github.com/UmangChoolet/Dune-A-Maze-Game" target="_blank">View project on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container mt-5">
+        <h2 class="contact-heading text-center mb-4">Contact Me</h2>
+        <!-- Contact Form -->
+        <form id="contactForm" action="https://formspree.io/f/mvggqnkq" method="POST">
+            <div class="mb-3">
+                <label for="user" class="form-label">Username</label>
+                <input type="text" class="form-control" id="user" name="username" placeholder="Enter your username"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="number" class="form-control" id="contact" name="contact"
+                    placeholder="Enter your contact number" required />
+            </div>
+            <div class="mb-3">
+                <label for="mail" class="form-label">Email Id</label>
+                <input type="email" class="form-control" id="mail" name="email" placeholder="Enter your email"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" id="message" class="form-control" cols="30" rows="10"
+                    placeholder="Enter your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Alert Box -->
+    <div id="notification" class="notification" style="display: none;">
+        Your message has been sent!
+    </div>
+
+    <div id="responseMessage"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="https://github.com/UmangChoolet" target="_blank">
+            <img width="50" height="50" src="img/iconmonstr-github-1-240.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/umang-choolet-55b387256/" target="_blank">
+            <img width="50" height="50" src="img/iconmonstr-linkedin-3-240.png" alt="LinkedIn">
+        </a>
+        <a href="https://leetcode.com/u/UmangChoolet/" target="_blank">
+            <img width="80" height="50" src="img/leetcode_image.png" alt="Leetcode">
+        </a>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        // Form validation
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#contactForm").submit(function (e) {
+                e.preventDefault(); // Prevent default submission
+                const $form = $(this);
+                $("#responseMessage").html('');
+                $.ajax({
+                    url: $form.attr("action"),
+                    method: "POST",
+                    data: $form.serialize(),
+                    dataType: "json",
+                    success: function () {
+                        $("#responseMessage").html(
+                            '<div class="alert alert-success">Message sent successfully!</div>'
+                        );
+                        setTimeout(function () {
+                            $("#responseMessage").fadeOut();
+                        }, 3000);
+                        $form[0].reset();
+                        $form.removeClass('was-validated');
+                    },
+                    error: function () {
+                        $("#responseMessage").html(
+                            '<div class="alert alert-danger">Failed to send message. Please try again.</div>'
+                        );
+                        setTimeout(function () {
+                            $("#responseMessage").fadeOut();
+                        }, 3000);
+                    },
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
